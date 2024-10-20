@@ -61,6 +61,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using plotly and streamlit for interactive visualization" href="03-workshop-visualization.html" />
+    <link rel="prev" title="Introduction to the basics of Python" href="01-workshop-python.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -174,8 +174,13 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01-workshop-python.html">Introduction to the basics of <code class="docutils literal notranslate"><span class="pre">Python</span></code></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tabular data analysis with <code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-workshop-visualization.html">Using <code class="docutils literal notranslate"><span class="pre">plotly</span></code> and <code class="docutils literal notranslate"><span class="pre">streamlit</span></code> for interactive visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-workshop-pypsa-dispatch.html">Dispatch problems with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-workshop-pypsa-investment.html">Capacity expansion planning with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-workshop-pypsa-sectors.html">Sector-coupling with <code class="docutils literal notranslate"><span class="pre">pypsa</span></code></a></li>
 </ul>
 
     </div>
@@ -2397,7 +2402,12 @@ Name: DateIn, dtype: float64
 </details>
 </div>
 <p><strong>Task 5:</strong> In the time series provided, calculate the annual average capacity factors of wind and solar.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
@@ -2413,9 +2423,15 @@ dtype: float64
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 <p><strong>Task 6:</strong> In the time series provided, calculate and plot the monthly average electricity price.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="p">[</span><span class="s2">&quot;prices&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s2">&quot;ME&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
@@ -2427,6 +2443,7 @@ dtype: float64
 </div>
 <img alt="_images/e259b9f0679e225e7c1d2ae2a11a96e1a7de56d0754d096974ec195ca8fdc0dc.png" src="_images/e259b9f0679e225e7c1d2ae2a11a96e1a7de56d0754d096974ec195ca8fdc0dc.png" />
 </div>
+</details>
 </div>
 </section>
 </section>
@@ -2461,6 +2478,24 @@ dtype: float64
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="01-workshop-python.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction to the basics of <code class="docutils literal notranslate"><span class="pre">Python</span></code></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="03-workshop-visualization.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Using <code class="docutils literal notranslate"><span class="pre">plotly</span></code> and <code class="docutils literal notranslate"><span class="pre">streamlit</span></code> for interactive visualization</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
