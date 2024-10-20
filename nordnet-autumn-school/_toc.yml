@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: 01-workshop-python
+- file: 02-workshop-pandas
+- file: 03-workshop-visualization
+- file: 04-workshop-pypsa-dispatch
+- file: 05-workshop-pypsa-investment
+- file: 06-workshop-pypsa-sectors
